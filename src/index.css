@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-nexus-bg text-nexus-text;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-nexus-accent text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity;
+  }
+  .section-padding {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-nexus-accent mb-8 text-center;
+  }
+  .card {
+    @apply bg-white p-6 rounded-lg shadow-lg;
+  }
+}
